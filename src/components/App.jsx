@@ -10,7 +10,7 @@ export const App = () => {
   const [bad, setBad] = useState(0);
 
 
-  onLeaveFeedback = (event) => {
+  const onLeaveFeedback = (event) => {
     const targetName = event.target.name
     
     if(targetName === "good"){
@@ -24,12 +24,12 @@ export const App = () => {
     }
   };
   
-  countTotalFeedback = () => {
+  const countTotalFeedback = () => {
     let total = good + neutral + bad;
     return total;
   };
 
-  countPositiveFeedbackPercentage = (totalFeedback) => {
+  const countPositiveFeedbackPercentage = (totalFeedback) => {
 
     if (totalFeedback > 0) return Math.round((good / totalFeedback) * 100);
     return 0;
@@ -41,7 +41,7 @@ export const App = () => {
       <Section title="Please leave feedback">
         <FeedbackOptions
           options={["good", "neutral", "bad"]}
-          onLeaveFeedback = {onLeaveFeedback()}
+          onLeaveFeedback = {onLeaveFeedback}
         />
       </Section>
 
