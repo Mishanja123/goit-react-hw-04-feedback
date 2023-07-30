@@ -1,0 +1,12 @@
+.statisticItem {
+    margin-left: 10px;
+}
+
+.borderContainer {
+    margin: 0;
+    padding: 10px;
+    border: 1px solid gray ;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px 1px rgba(16, 170, 36, 0.3);
+  }
+ 
